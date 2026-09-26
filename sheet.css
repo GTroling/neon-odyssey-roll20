@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700&display=swap');
+
+.sheet-container {
+    position: relative;
+    width: 1700px;
+    margin: 0 auto;
+    padding-top: 55px;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+}
+
+.sheet-container > input[type="radio"] {
+    display: none !important;
+}
+
+.sheet-page-tabs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1700px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    z-index: 10000;
+}
+
+.sheet-page-tabs label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    height: 36px;
+    padding: 0 24px;
+    box-sizing: border-box;
+    background: #1b1b1b;
+    border: 1px solid #555;
+    color: #ddd !important;
+    font-family: 'Roboto Condensed', Arial, sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 36px !important;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.12s ease, border-color 0.12s ease, color 0.12s ease;
+}
+
+.sheet-page-tabs label:hover {
+    background: #303030;
+    border-color: #888;
+    color: #fff !important;
+}
+
+#sheet-page-1:checked ~ .sheet-page-tabs label[for="sheet-page-1"],
+#sheet-page-2:checked ~ .sheet-page-tabs label[for="sheet-page-2"],
+#sheet-page-3:checked ~ .sheet-page-tabs label[for="sheet-page-3"] {
+    background: #444;
+    border-color: #aaa;
+    color: #fff !important;
+}
+
+.sheet-page {
+    display: none;
+    width: 1700px;
+    min-height: 2200px;
+}
+
+#sheet-page-1:checked ~ .sheet-page-1 {
+    display: block;
+}
+
+#sheet-page-2:checked ~ .sheet-page-2 {
+    display: block;
+}
+
+#sheet-page-3:checked ~ .sheet-page-3 {
+    display: block;
+}
+
+.sheetmagic {
+    position: relative;
+    margin: 0 auto;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+}
+
+.sheetmagic * {
+    color: #000 !important;
+    font-family: 'Roboto Condensed', Arial, sans-serif !important;
+}
+
+.sm-prop {
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #000;
+}
+
+.sm-prop:focus {
+    background: rgba(255, 255, 255, 0.15) !important;
+}
+
+.sm-num {
+    text-align: center;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    padding: 0 !important;
+}
+
+.sm-mlt {
+    font-family: 'Roboto Condensed', Arial, sans-serif !important;
+    font-size: 25px !important;
+    font-weight: 500 !important;
+    line-height: 1.15 !important;
+    letter-spacing: 0 !important;
+    text-align: left !important;
+    resize: none;
+    padding: 0 0 0 6px !important;
+}
+
+.sm-slt {
+    font-family: 'Roboto Condensed', Arial, sans-serif !important;
+}
+
+.sm-roll {
+    cursor: pointer;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+button[type="roll"]::before {
+    content: "" !important;
+}
+
+.sm-checkbox {
+    cursor: pointer;
+    appearance: none;
+}
+
+.sm-checkbox:checked {
+    appearance: auto;
+}
+
+.sm-noedit {
+    border: none !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[name^="attr_factiontext"] {
+    font-size: 27px !important;
+    font-weight: 500 !important;
+}
+
+input[name^="attr_factionnscore"] {
+    font-size: 27px !important;
+    font-weight: 500 !important;
+    text-align: center !important;
+}
+
+input[name="attr_galacticnotestext"] {
+    font-size: 168px !important;
+    font-weight: 500 !important;
+}
+
+input[name="attr_galacticnotesscore"] {
+    font-size: 48px !important;
+    font-weight: 500 !important;
+    text-align: center !important;
+}
+
+input[name^="attr_magicitemtext"] {
+    font-size: 27px !important;
+    font-weight: 500 !important;
+}
+
+input[name^="attr_spellname"] {
+    font-size: 25px !important;
+}
+
+input[name^="attr_spellcasttime"] {
+    font-size: 29px !important;
+}
+
+input[name^="attr_spellrange"] {
+    font-size: 28px !important;
+}
+
+input[name^="attr_spellmaterial"] {
+    font-size: 30px !important;
+}
+
+input[name^="attr_spellschool"] {
+    font-size: 31px !important;
+}
+
+input[name^="attr_spellnote"] {
+    font-size: 32px !important;
+}
+
+input[name^="attr_spellpage"] {
+    font-size: 33px !important;
+}
+
+input[name^="attr_spelllevel"] {
+    font-size: 27px !important;
+}
+
+.sheet-page .sheetmagic {
+    width: 1700px;
+    height: 2200px;
+}

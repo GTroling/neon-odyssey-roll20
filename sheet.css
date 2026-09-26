@@ -1,19 +1,12 @@
-.sheet-page {
-    width: 773px;
-    height: 1000px;
-    position: relative;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
+.character-name {
+    position: absolute;
+    left: 28px;
+    top: 4px;
+    width: 350px;
+    height: 20px;
 
-.sheet-page-1 {
-    background-image: url("https://raw.githubusercontent.com/GTroling/neon-odyssey-roll20/main/page1.png");
-}
+    background: transparent;
+    border: none;
 
-.sheet-page-2 {
-    background-image: url("https://raw.githubusercontent.com/GTroling/neon-odyssey-roll20/main/page2.png");
-}
-
-.sheet-page-3 {
-    background-image: url("https://raw.githubusercontent.com/GTroling/neon-odyssey-roll20/main/page3.png");
+    font-size: 14px;
 }

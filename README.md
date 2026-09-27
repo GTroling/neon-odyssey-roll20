@@ -15,11 +15,6 @@ A Roll20 character sheet for **Neon Odyssey**.
 
 That's it. The character sheet should then work in Roll20.
 
-## Credits
-
-© Designed by **GTroling**.  
-Created for personal, non-commercial use.
-
 ## Contact
 
 If you have any questions, suggestions, or encounter any issues with the character sheet, feel free to contact me:

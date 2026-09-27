@@ -1,224 +1,376 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700&display=swap');
 
+.sheetmagic {
+  position: relative;
+  margin: auto;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+}
+
+.sheetmagic * {
+  color: #000000 !important;
+  font-family: 'Roboto Condensed', Arial, sans-serif !important;
+}
+
+.sm-prop {
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute;
+  background: transparent !important;
+  box-shadow: none;
+  border: none !important;
+  color: #000000;
+}
+
+.sm-prop:focus {
+  background: rgba(255, 255, 255, 0.15) !important;
+}
+
+.sm-num {
+  text-align: center;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+  padding: 0 !important;
+}
+
+.sm-mlt {
+  font-family: 'Roboto Condensed', Arial, sans-serif !important;
+  font-size: 25px !important;
+  font-weight: 500 !important;
+  line-height: 1.15 !important;
+  letter-spacing: 0 !important;
+  text-align: left !important;
+  resize: none;
+  padding: 0 0 0 6px !important;
+}
+
+
+/* CHARACTER */
+
+input[name="attr_player"],
+input[name="attr_charname"],
+input[name="attr_class"],
+input[name="attr_subclass"],
+input[name="attr_race"],
+input[name="attr_homeworld"] {
+  font-size: 25px !important;
+  font-weight: 500 !important;
+}
+
+
+/* ABILITIES */
+
+input[name="attr_strscore"],
+input[name="attr_dexscore"],
+input[name="attr_conscore"],
+input[name="attr_intscore"],
+input[name="attr_wisscore"],
+input[name="attr_charscore"] {
+  font-size: 38px !important;
+  font-weight: 600 !important;
+}
+
+input[name="attr_strmod"],
+input[name="attr_dexmod"],
+input[name="attr_conmod"],
+input[name="attr_intmod"],
+input[name="attr_wismod"],
+input[name="attr_charmod"] {
+  font-size: 28px !important;
+  font-weight: 500 !important;
+}
+
+input[name="attr_strsave"],
+input[name="attr_dexsave"],
+input[name="attr_consave"],
+input[name="attr_intsave"],
+input[name="attr_wissave"],
+input[name="attr_charsave"] {
+  font-size: 24px !important;
+  font-weight: 500 !important;
+}
+
+
+/* SKILLS */
+
+input[name="attr_acrobatic"],
+input[name="attr_animal"],
+input[name="attr_arcana"],
+input[name="attr_athletics"],
+input[name="attr_computers"],
+input[name="attr_deception"],
+input[name="attr_history"],
+input[name="attr_insight"],
+input[name="attr_intimidation"],
+input[name="attr_investigation"],
+input[name="attr_medicine"],
+input[name="attr_nature"],
+input[name="attr_perception"],
+input[name="attr_perfomance"],
+input[name="attr_persuasion"],
+input[name="attr_religion"],
+input[name="attr_sleight"],
+input[name="attr_stealth"],
+input[name="attr_survival"],
+input[name="attr_technology"] {
+  font-size: 19px !important;
+  font-weight: 500 !important;
+}
+
+
+/* CORE STATS */
+
+input[name="attr_level"] {
+  font-size: 42px !important;
+  font-weight: 600 !important;
+}
+
+input[name="attr_ac"],
+input[name="attr_speed"],
+input[name="attr_initiative"] {
+  font-size: 42px !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  line-height: 1 !important;
+}
+
+input[name="attr_exp"] {
+  font-size: 28px !important;
+  font-weight: 500 !important;
+}
+
+input[name="attr_proficiency"] {
+  font-size: 28px !important;
+  font-weight: 600 !important;
+  color: rgb(157, 156, 156) !important;
+}
+
+input[name="attr_passiveperception"] {
+  font-size: 28px !important;
+  font-weight: 600 !important;
+  color: rgb(157, 156, 156) !important;
+}
+
+
+/* HP */
+
+input[name="attr_hpcur"],
+input[name="attr_hpmax"],
+input[name="attr_hptemp"],
+input[name="attr_hdmax"],
+input[name="attr_hdspent"] {
+  font-size: 48px !important;
+  font-weight: 500 !important;
+  text-align: center !important;
+  line-height: 1 !important;
+}
+
+input[name="attr_hpcur"] {
+  font-weight: 600 !important;
+}
+
+
+/* WEAPONS */
+
+input[name^="attr_weaponname"],
+input[name^="attr_weaponmod"],
+input[name^="attr_weapondmg"],
+input[name^="attr_weaponnote"] {
+  font-family: 'Roboto Condensed', Arial, sans-serif !important;
+  font-size: 25px !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+}
+
+
+/* DETAILS */
+
+input[name^="attr_magicitemtext"],
+input[name^="attr_factiontext"],
+textarea[name="attr_feat2text"],
+textarea[name="attr_languagestext"],
+textarea[name="attr_notestext"],
+textarea[name="attr_equiptext"],
+textarea[name="attr_weaponproftext"],
+textarea[name="attr_toolstext"],
+textarea[name="attr_vehicletext"],
+textarea[name="attr_galacticnotestext"] {
+  font-family: 'Roboto Condensed', Arial, sans-serif !important;
+  font-size: 25px !important;
+  font-weight: 500 !important;
+  line-height: 1.15 !important;
+}
+
+
+/* GALACTIC NOTES */
+
+input[name="attr_galacticnotesscore"] {
+  font-size: 34px !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  line-height: 1 !important;
+}
+
+
+/* SPELLS */
+
+input[name^="attr_spellname"],
+input[name^="attr_spellcasttime"],
+input[name^="attr_spellrange"],
+input[name^="attr_spellmaterial"],
+input[name^="attr_spellschool"],
+input[name^="attr_spellnote"],
+input[name^="attr_spellpage"] {
+  font-family: 'Roboto Condensed', Arial, sans-serif !important;
+  font-size: 25px !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+}
+
+input[name^="attr_spelllevel"] {
+  font-family: 'Roboto Condensed', Arial, sans-serif !important;
+  font-size: 27px !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+}
+
+input[name^="attr_spellcastingmod"],
+input[name^="attr_spellcastingdc"],
+input[name^="attr_spellattack"],
+input[name="attr_spellmod"],
+input[name="attr_spelldc"] {
+  font-family: 'Roboto Condensed', Arial, sans-serif !important;
+  font-size: 34px !important;
+  font-weight: 500 !important;
+  text-align: center !important;
+  line-height: 1 !important;
+}
+
+input[name^="attr_totalspellslot"] {
+  font-family: 'Roboto Condensed', Arial, sans-serif !important;
+  font-size: 34px !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  line-height: 1 !important;
+}
+
+
+/* ROLLS */
+
+.sm-roll {
+  cursor: pointer;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+button[type='roll']::before {
+  content: '' !important;
+}
+
+
+/* CHECKBOXES */
+
+.sm-checkbox {
+  cursor: pointer;
+  appearance: none;
+}
+
+.sm-checkbox:checked {
+  appearance: auto;
+}
+
+
+/* NUMBER INPUTS */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.sm-noedit {
+  border: none !important;
+}
+
+
+/* PAGE SWITCHER */
+
 .sheet-container {
-    position: relative;
-    width: 1700px;
-    margin: 0 auto;
-    padding-top: 55px;
-    font-family: 'Roboto Condensed', Arial, sans-serif;
+  position: relative;
+  width: 1700px;
+  margin: 0 auto;
+  padding-top: 55px;
 }
 
 .sheet-container > input[type="radio"] {
-    display: none !important;
+  display: none !important;
 }
 
 .sheet-page-tabs {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1700px;
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    z-index: 10000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1700px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  z-index: 10000;
 }
 
 .sheet-page-tabs label {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 150px;
-    height: 36px;
-    padding: 0 24px;
-    box-sizing: border-box;
-    background: #1b1b1b;
-    border: 1px solid #555;
-    color: #ddd !important;
-    font-family: 'Roboto Condensed', Arial, sans-serif !important;
-    font-size: 16px !important;
-    font-weight: 600 !important;
-    line-height: 36px !important;
-    text-align: center;
-    cursor: pointer;
-    user-select: none;
-    transition: background 0.12s ease, border-color 0.12s ease, color 0.12s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  height: 36px;
+  padding: 0 24px;
+  box-sizing: border-box;
+  background: #1b1b1b;
+  border: 1px solid #555;
+  color: #ddd !important;
+  font-family: Arial, sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  line-height: 36px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
 }
 
 .sheet-page-tabs label:hover {
-    background: #303030;
-    border-color: #888;
-    color: #fff !important;
+  background: #303030;
+  border-color: #888;
+  color: #fff !important;
 }
 
 #sheet-page-1:checked ~ .sheet-page-tabs label[for="sheet-page-1"],
 #sheet-page-2:checked ~ .sheet-page-tabs label[for="sheet-page-2"],
 #sheet-page-3:checked ~ .sheet-page-tabs label[for="sheet-page-3"] {
-    background: #444;
-    border-color: #aaa;
-    color: #fff !important;
+  background: #444;
+  border-color: #aaa;
+  color: #fff !important;
 }
 
 .sheet-page {
-    display: none;
-    width: 1700px;
-    min-height: 2200px;
+  display: none;
+  width: 1700px;
+  min-height: 2200px;
 }
 
 #sheet-page-1:checked ~ .sheet-page-1 {
-    display: block;
+  display: block;
 }
 
 #sheet-page-2:checked ~ .sheet-page-2 {
-    display: block;
+  display: block;
 }
 
 #sheet-page-3:checked ~ .sheet-page-3 {
-    display: block;
-}
-
-.sheetmagic {
-    position: relative;
-    margin: 0 auto;
-    font-family: 'Roboto Condensed', Arial, sans-serif;
-}
-
-.sheetmagic * {
-    color: #000 !important;
-    font-family: 'Roboto Condensed', Arial, sans-serif !important;
-}
-
-.sm-prop {
-    margin: 0 !important;
-    padding: 0 !important;
-    position: absolute;
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    color: #000;
-}
-
-.sm-prop:focus {
-    background: rgba(255, 255, 255, 0.15) !important;
-}
-
-.sm-num {
-    text-align: center;
-    font-weight: 500 !important;
-    line-height: 1 !important;
-    padding: 0 !important;
-}
-
-.sm-mlt {
-    font-family: 'Roboto Condensed', Arial, sans-serif !important;
-    font-size: 25px !important;
-    font-weight: 500 !important;
-    line-height: 1.15 !important;
-    letter-spacing: 0 !important;
-    text-align: left !important;
-    resize: none;
-    padding: 0 0 0 6px !important;
-}
-
-.sm-slt {
-    font-family: 'Roboto Condensed', Arial, sans-serif !important;
-}
-
-.sm-roll {
-    cursor: pointer;
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-}
-
-button[type="roll"]::before {
-    content: "" !important;
-}
-
-.sm-checkbox {
-    cursor: pointer;
-    appearance: none;
-}
-
-.sm-checkbox:checked {
-    appearance: auto;
-}
-
-.sm-noedit {
-    border: none !important;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-input[type="number"] {
-    -moz-appearance: textfield;
-}
-
-input[name^="attr_factiontext"] {
-    font-size: 27px !important;
-    font-weight: 500 !important;
-}
-
-input[name^="attr_factionnscore"] {
-    font-size: 27px !important;
-    font-weight: 500 !important;
-    text-align: center !important;
-}
-
-input[name="attr_galacticnotestext"] {
-    font-size: 168px !important;
-    font-weight: 500 !important;
-}
-
-input[name="attr_galacticnotesscore"] {
-    font-size: 48px !important;
-    font-weight: 500 !important;
-    text-align: center !important;
-}
-
-input[name^="attr_magicitemtext"] {
-    font-size: 27px !important;
-    font-weight: 500 !important;
-}
-
-input[name^="attr_spellname"] {
-    font-size: 25px !important;
-}
-
-input[name^="attr_spellcasttime"] {
-    font-size: 29px !important;
-}
-
-input[name^="attr_spellrange"] {
-    font-size: 28px !important;
-}
-
-input[name^="attr_spellmaterial"] {
-    font-size: 30px !important;
-}
-
-input[name^="attr_spellschool"] {
-    font-size: 31px !important;
-}
-
-input[name^="attr_spellnote"] {
-    font-size: 32px !important;
-}
-
-input[name^="attr_spellpage"] {
-    font-size: 33px !important;
-}
-
-input[name^="attr_spelllevel"] {
-    font-size: 27px !important;
-}
-
-.sheet-page .sheetmagic {
-    width: 1700px;
-    height: 2200px;
+  display: block;
 }

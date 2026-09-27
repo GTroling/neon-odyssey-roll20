@@ -19,3 +19,14 @@ That's it. The character sheet should then work in Roll20.
 
 © Designed by **GTroling**.  
 Created for personal, non-commercial use.
+
+## Contact
+
+If you have any questions, suggestions, or encounter any issues with the character sheet, feel free to contact me:
+
+- **Telegram:** [@GTroling](https://t.me/GTroling)
+- **VK:** [Кирякин Михаил](https://vk.com/)
+- **Discord:** `rearraksh`
+
+© Designed by **GTroling**.  
+Created for personal, non-commercial use.
